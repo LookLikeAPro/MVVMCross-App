@@ -13,7 +13,7 @@ namespace MVVM.Store
 
         protected override IMvxApplication CreateApp()
         {
-            return new MVVM.Core.App();
+            return new Core.App();
         }
 		
         protected override IMvxTrace CreateDebugTrace()

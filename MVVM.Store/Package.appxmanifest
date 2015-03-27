@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
 
-  <Identity Name="6152d373-28e8-475a-8e39-ed0463022447"
+  <Identity Name="f50df0d5-6109-4f89-89e5-fad0ca9c58df"
             Publisher="CN=Jerry"
             Version="1.0.0.0" />
-
-  <mp:PhoneIdentity PhoneProductId="6152d373-28e8-475a-8e39-ed0463022447" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>MVVM.Store</DisplayName>
@@ -14,10 +12,10 @@
   </Properties>
 
   <Prerequisites>
-    <OSMinVersion>6.3.1</OSMinVersion>
-    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
-  
+
   <Resources>
     <Resource Language="x-generate"/>
   </Resources>
@@ -26,19 +24,18 @@
     <Application Id="App"
         Executable="$targetnametoken$.exe"
         EntryPoint="MVVM.Store.App">
-        <m3:VisualElements
+        <m2:VisualElements
             DisplayName="MVVM.Store"
             Square150x150Logo="Assets\Logo.png"
-            Square44x44Logo="Assets\SmallLogo.png"
+            Square30x30Logo="Assets\SmallLogo.png"
             Description="MVVM.Store"
             ForegroundText="light"
-            BackgroundColor="transparent">
-            <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"/>
-            <m3:SplashScreen Image="Assets\SplashScreen.png"/>
-        </m3:VisualElements>
+            BackgroundColor="#464646">
+            <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        </m2:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
-    <Capability Name="internetClientServer" />
+    <Capability Name="internetClient" />
   </Capabilities>
 </Package>
